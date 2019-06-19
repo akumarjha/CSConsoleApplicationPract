@@ -1,0 +1,6 @@
+C:\New folder\Pract\CS\ConPract\MulticastDeligate\MulticastDeligate\bin\Debug\MulticastDeligate.exe.config
+C:\New folder\Pract\CS\ConPract\MulticastDeligate\MulticastDeligate\bin\Debug\MulticastDeligate.exe
+C:\New folder\Pract\CS\ConPract\MulticastDeligate\MulticastDeligate\bin\Debug\MulticastDeligate.pdb
+C:\New folder\Pract\CS\ConPract\MulticastDeligate\MulticastDeligate\obj\Debug\MulticastDeligate.csprojResolveAssemblyReference.cache
+C:\New folder\Pract\CS\ConPract\MulticastDeligate\MulticastDeligate\obj\Debug\MulticastDeligate.exe
+C:\New folder\Pract\CS\ConPract\MulticastDeligate\MulticastDeligate\obj\Debug\MulticastDeligate.pdb
