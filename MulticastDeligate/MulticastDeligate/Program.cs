@@ -18,6 +18,11 @@ namespace MulticastDeligate
             //del4 = new SampleDelegate(SimpleMethod4);
             del4 = del1 + del2 + del3;
             del4();
+
+            SampleDelegate sd = new SampleDelegate(SimpleMethod1);
+            sd += SimpleMethod2;
+            sd += SimpleMethod3;
+            sd += SimpleMethod4;
             Console.ReadLine();
         }
         public static void SimpleMethod1()
