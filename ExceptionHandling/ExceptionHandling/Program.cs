@@ -9,6 +9,8 @@ namespace ExceptionHandling
         {
             try
             {
+                ExceptionHandlingAbuse ah = new ExceptionHandlingAbuse();
+                ah.Abuse();
                 throw new CustomExceptionDemo("This is custome exception...");
             }
             catch (CustomExceptionDemo ce)
