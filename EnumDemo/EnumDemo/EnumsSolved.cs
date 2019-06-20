@@ -6,50 +6,56 @@ using System.Threading.Tasks;
 
 namespace EnumDemo
 {
-    public class Program
-    { 
-        static void Main1(string[] args)
+    public class EnumsSolved
+    {
+        static void Main(string[] args)
         {
-            Customer[] customers = new Customer[3];
-            customers[0] = new Customer()
+            Customer1[] customers = new Customer1[3];
+            customers[0] = new Customer1()
             {
                 Name="Ashutosh",
-                Gender=1
+                Gender=Gender.Male
             };
-            customers[1] = new Customer()
+            customers[1] = new Customer1()
             {
                 Name = "Alok",
-                Gender = 1
+                Gender = Gender.Male
             };
-            customers[2] = new Customer()
+            customers[2] = new Customer1()
             {
                 Name = "Marry",
-                Gender = 2
+                Gender = Gender.Female
             };
-            foreach (Customer customer in customers)
+            foreach (Customer1 customer in customers)
             {
                 Console.WriteLine("Customer Name ={0} and Gender ={1}", customer.Name, GetGender(customer.Gender));
             }
             Console.ReadLine();
         }
-        public static string GetGender(int gender)
+        public static string GetGender(Gender gender)
         {
             switch (gender)
             {
-                case 0 :
+                case Gender.Unknown :
                     return "Unknown";
-                case 1 :
+                case Gender.Male :
                     return "Male";
-                case 2 :
+                case Gender.Female :
                     return "Female";
                 default :
                     return "Incalid Input";
             }
         }
     }
-    public class Customer
+    public enum Gender
+    {
+        Unknown,
+        Male,
+        Female
+    }
+    public class Customer1
     {
         public string Name { get; set; }
-        public int Gender { get; set; }
+        public Gender Gender { get; set; }
     }
 }
