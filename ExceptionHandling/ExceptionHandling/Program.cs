@@ -7,6 +7,14 @@ namespace ExceptionHandling
     {
         static void Main(string[] args)
         {
+            try
+            {
+                throw new CustomExceptionDemo("This is custome exception...");
+            }
+            catch (CustomExceptionDemo ce)
+            {
+                Console.WriteLine(ce.Message);
+            }
             StreamReader sr = null;
             try
             {
@@ -25,6 +33,7 @@ namespace ExceptionHandling
                 }
                 Console.WriteLine("Finally block.....");
             }
+            Console.ReadLine();
         }
     }
 }
